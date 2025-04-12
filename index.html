@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartupFlow | Collaborative Platform for Startups</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h2>Startup<span>Flow</span></h2>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-item active" data-tab="dashboard">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </div>
+                <div class="nav-item" data-tab="ideation">
+                    <a href="#">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Ideation</span>
+                    </a>
+                </div>
+                <div class="nav-item" data-tab="development">
+                    <a href="#">
+                        <i class="fas fa-code"></i>
+                        <span>Development</span>
+                    </a>
+                </div>
+                <div class="nav-item" data-tab="metrics">
+                    <a href="#">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Metrics</span>
+                    </a>
+                </div>
+                <div class="nav-item" data-tab="funding">
+                    <a href="#">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>Funding</span>
+                    </a>
+                </div>
+                <div class="nav-item" data-tab="team">
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <span>Team</span>
+                    </a>
+                </div>
+                <div class="nav-item" data-tab="legal">
+                    <a href="#">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Legal</span>
+                    </a>
+                </div>
+                <div class="nav-item" data-tab="network">
+                    <a href="#">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Network</span>
+                    </a>
+                </div>
+                <div class="nav-item" data-tab="settings">
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="startup-phase">
+                <div class="phase-label">Startup Phase</div>
+                <div class="phase-progress">
+                    <div class="phase-step completed">
+                        <div class="phase-icon"><i class="fas fa-check"></i></div>
+                        <div class="phase-name">Ideation</div>
+                    </div>
+                    <div class="phase-step active">
+                        <div class="phase-icon"><i class="fas fa-code"></i></div>
+                        <div class="phase-name">Development</div>
+                    </div>
+                    <div class="phase-step">
+                        <div class="phase-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                        <div class="phase-name">Funding</div>
+                    </div>
+                    <div class="phase-step">
+                        <div class="phase-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="phase-name">Growth</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Dashboard Tab -->
+            <div class="tab-content dashboard-tab">
+                <div class="header">
+                    <h1>Dashboard</h1>
+                    <div class="user-menu">
+                        <div class="notification-icon">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge">3</span>
+                        </div>
+                        <div class="user-info">
+                            <h4>Alex Johnson</h4>
+                            <p>Founder & CEO</p>
+                        </div>
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                    </div>
+                </div>
+                
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Days Runway Left</div>
+                            <div class="card-icon icon-funding">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                        <div class="card-value">87</div>
+                        <div class="card-description">Based on current burn rate</div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Team Members</div>
+                            <div class="card-icon icon-development">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="card-value">5</div>
+                        <div class="card-description">2 positions to fill</div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Investor Meetings</div>
+                            <div class="card-icon icon-funding">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                        </div>
+                        <div class="card-value">3</div>
+                        <div class="card-description">Scheduled this week</div>
+                    </div>
+                </div>
+                
+                <div class="dna-profile">
+                    <div class="dna-header">
+                        <div class="dna-title">Your Startup DNA Profile</div>
+                        <button class="view-recommendations-btn">
+                            View Recommendations
+                        </button>
+                    </div>
+                    
+                    <div class="dna-visual">
+                        <div class="dna-radar">
+                            <div class="radar-placeholder">
+                                <i class="fas fa-dna"></i>
+                                <p>Visualization coming soon</p>
+                            </div>
+                            <div class="dna-category" style="top: 10%; left: 50%;">Product</div>
+                            <div class="dna-category" style="top: 50%; right: 10%;">Team</div>
+                            <div class="dna-category" style="bottom: 10%; left: 50%;">Market</div>
+                            <div class="dna-category" style="top: 50%; left: 10%;">Funding</div>
+                        </div>
+                    </div>
+                    
+                    <div class="dna-recommendations">
+                        <div class="section-title">Recommendations</div>
+                        
+                        <div class="recommendation">
+                            <i class="fas fa-user-plus"></i>
+                            <div>
+                                <strong>Hire a technical co-founder</strong>
+                                <p>Your team lacks technical expertise for product development</p>
+                            </div>
+                        </div>
+                        
+                        <div class="recommendation">
+                            <i class="fas fa-search-dollar"></i>
+                            <div>
+                                <strong>Conduct pricing research</strong>
+                                <p>Validate your pricing model with potential customers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="recommendation">
+                            <i class="fas fa-file-signature"></i>
+                            <div>
+                                <strong>Prepare SAFE agreements</strong>
+                                <p>Get ready for your upcoming funding round</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activity-section">
+                    <div class="section-title">Recent Activity</div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Pitch deck updated</h4>
+                            <p>You've made changes to the financial projections slide</p>
+                            <div class="activity-time">2 hours ago</div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>New investor connection</h4>
+                            <p>Sarah Miller from Sequoia accepted your meeting request</p>
+                            <div class="activity-time">Yesterday</div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>MVP milestone reached</h4>
+                            <p>Your team completed the core feature development</p>
+                            <div class="activity-time">2 days ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ideation Tab -->
+            <div class="tab-content ideation-tab">
+                <div class="ideation-header">
+                    <h2><i class="fas fa-lightbulb"></i> Ideation Toolkit</h2>
+                    <p>Validate and refine your startup idea</p>
+                </div>
+
+                <div class="ideation-tools">
+                    <!-- Lean Canvas Tool -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <h3>Lean Canvas Builder</h3>
+                            <div class="tool-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                        </div>
+                        <div class="tool-body">
+                            <p>Fill out the 9 key boxes of your business model</p>
+                            <button class="start-tool-btn" data-tool="lean-canvas">
+                                Start Building <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Problem Validation -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <h3>Problem Validation</h3>
+                            <div class="tool-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                        </div>
+                        <div class="tool-body">
+                            <p>Test if you're solving a real problem</p>
+                            <button class="start-tool-btn" data-tool="problem-validation">
+                                Validate Now <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Competitor Analysis -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <h3>Competitor Matrix</h3>
+                            <div class="tool-icon">
+                                <i class="fas fa-chess-board"></i>
+                            </div>
+                        </div>
+                        <div class="tool-body">
+                            <p>Map your competitive landscape</p>
+                            <button class="start-tool-btn" data-tool="competitor-analysis">
+                                Analyze Market <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Idea Validation Results -->
+                <div class="validation-section">
+                    <h3><i class="fas fa-chart-bar"></i> Idea Health Check</h3>
+                    <div class="validation-metrics">
+                        <div class="metric-card">
+                            <div class="metric-value">0%</div>
+                            <div class="metric-label">Problem Validation</div>
+                            <div class="metric-bar">
+                                <div class="metric-progress" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">0%</div>
+                            <div class="metric-label">Solution Fit</div>
+                            <div class="metric-bar">
+                                <div class="metric-progress" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">0%</div>
+                            <div class="metric-label">Market Potential</div>
+                            <div class="metric-bar">
+                                <div class="metric-progress" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Idea Journal -->
+                <div class="idea-journal">
+                    <h3><i class="fas fa-book"></i> Idea Journal</h3>
+                    <div class="journal-editor">
+                        <textarea placeholder="Document your ideas, pivots, and insights..."></textarea>
+                        <div class="journal-actions">
+                            <button class="save-journal-btn">
+                                <i class="fas fa-save"></i> Save Entry
+                            </button>
+                            <button class="add-attachment-btn">
+                                <i class="fas fa-paperclip"></i> Add File
+                            </button>
+                        </div>
+                    </div>
+                    <div class="journal-entries">
+                        <div class="no-entries">
+                            <i class="fas fa-pen-fancy"></i>
+                            <p>No journal entries yet. Start documenting your ideation process!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other tabs would go here -->
+            <div class="tab-content development-tab" style="display: none;">
+                <h1>Development Tools Coming Soon</h1>
+            </div>
+            <div class="tab-content metrics-tab" style="display: none;">
+                <h1>Metrics Dashboard Coming Soon</h1>
+            </div>
+            <div class="tab-content funding-tab" style="display: none;">
+                <h1>Funding Tools Coming Soon</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
